@@ -1,0 +1,44 @@
+name: binary_lab
+description: An interactive visual lab that teaches students the binary number system.
+publish_to: 'none'
+version: 2.0.0+1
+
+environment:
+  sdk: '>=3.5.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  provider: ^6.1.2
+  google_fonts: ^6.2.1
+  shared_preferences: ^2.3.2
+  confetti: ^0.8.0
+  audioplayers: ^6.1.0   # 🆕 plays our synthesized WAV bytes
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  # ─────────────────────────────────────────────────────────────
+  #  YOUR OWN FONTS (see section 4):
+  #  1) create  assets/fonts/  and copy your .ttf / .otf files in
+  #  2) uncomment & rename the block below
+  #  3) set the family names in  lib/utils/app_fonts.dart
+  #
+  fonts:
+    - family: MyFont
+      fonts:
+        - asset: assets/fonts/UniSalar.otf
+  #       - asset: assets/fonts/MyFont-Bold.ttf
+  #         weight: 700
+    - family: MyKurdishFont
+      fonts:
+        - asset: assets/fonts/UniSalar.otf
+  # ─────────────────────────────────────────────────────────────
